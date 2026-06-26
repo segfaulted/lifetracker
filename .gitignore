@@ -1,0 +1,41 @@
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.venv/
+**/venv/
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/.eggs/
+**/lib/
+**/lib64/
+**/parts/
+**/sdist/
+**/var/
+**/wheels/
+**/share/python-wheels/
+**/*.egg-info/
+**/.installed.cfg
+**/*.egg
+**/manifest
+**/spec
+
+# Node/React
+**/node_modules/
+**/dist/
+**/.npm/
+**/.eslintcache
+**/.stylelintcache
+
+# Local database
+**/tracker.db
+
+# Git backup folders
+**/.git.bak/
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

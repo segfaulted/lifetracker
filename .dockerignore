@@ -1,0 +1,11 @@
+.git
+.github
+**/.venv
+**/node_modules
+**/dist
+**/*.db
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+desktop-linux
