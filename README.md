@@ -121,7 +121,7 @@ cd desktop-linux
 To bind a keyboard shortcut to toggle the client open or closed (e.g. `Super+Alt+T`):
 1. Navigate to **Settings** -> **Keyboard** -> **Keyboard Shortcuts** -> **View and Customise Shortcuts** -> **Custom Shortcuts** -> **Add Shortcut**.
 2. Name: `Toggle TaskTracker`
-3. Command: `/home/bgarcia/tasktracker_server/desktop-linux/tasktracker-client.sh --toggle`
+3. Command: `/path/to/lifetracker/desktop-linux/tasktracker-client.sh --toggle`
 4. Key: (your choice of key combination)
 5. Click **Add**.
 
