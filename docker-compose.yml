@@ -6,8 +6,10 @@ services:
     container_name: lifetracker
     ports:
       - "8000:8000"
+    environment:
+      - DATABASE_FILE=/app/data/tracker.db
     volumes:
-      - lifetracker_db:/app/backend
+      - lifetracker_db:/app/data
     restart: unless-stopped
 
 volumes:

@@ -10,6 +10,9 @@ RUN npm run build
 FROM python:3.12-slim
 WORKDIR /app
 
+# Create directory for persistent SQLite database storage
+RUN mkdir -p /app/data
+
 # Install uv for fast dependency management
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
