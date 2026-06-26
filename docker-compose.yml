@@ -5,7 +5,7 @@ services:
     build: .
     container_name: lifetracker
     ports:
-      - "8000:8000"
+      - "8129:8000"
     environment:
       - DATABASE_FILE=/app/data/tracker.db
     volumes:
