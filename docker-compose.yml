@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  lifetracker:
+    build: .
+    container_name: lifetracker
+    ports:
+      - "8000:8000"
+    volumes:
+      - lifetracker_db:/app/backend
+    restart: unless-stopped
+
+volumes:
+  lifetracker_db:
