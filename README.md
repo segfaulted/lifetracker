@@ -1,6 +1,6 @@
-# TaskTracker
+# Life Tracker
 
-TaskTracker is a single-user task and time tracking application. It features a fast Python (FastAPI) backend storing data in a local SQLite database, and a highly interactive, responsive React + TypeScript Single-Page Application (SPA) styled with Tailwind CSS v4.
+Life Tracker is a single-user task and time tracking application. It features a fast Python (FastAPI) backend storing data in a local SQLite database, and a highly interactive, responsive React + TypeScript Single-Page Application (SPA) styled with Tailwind CSS v4.
 
 ---
 
@@ -64,7 +64,7 @@ npm run dev -- --host 0.0.0.0
 ## Project Structure
 
 ```text
-tasktracker_server/
+lifetracker/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py
@@ -102,7 +102,7 @@ tasktracker_server/
     ├── run.py               # Main desktop runner
     ├── test_client.py       # GUI & API integration test script
     ├── pyproject.toml
-    └── tasktracker-client.sh # Desktop shortcut trigger script
+    └── lifetracker-client.sh # Desktop shortcut trigger script
 ```
 
 ---
@@ -114,14 +114,14 @@ The desktop client is built on **Python 3** and **PyQt6**. It operates as a back
 To run the desktop client manually:
 ```bash
 cd desktop-linux
-./tasktracker-client.sh
+./lifetracker-client.sh
 ```
 
 ### Global Keyboard Toggle Shortcut on Wayland
 To bind a keyboard shortcut to toggle the client open or closed (e.g. `Super+Alt+T`):
 1. Navigate to **Settings** -> **Keyboard** -> **Keyboard Shortcuts** -> **View and Customise Shortcuts** -> **Custom Shortcuts** -> **Add Shortcut**.
-2. Name: `Toggle TaskTracker`
-3. Command: `/path/to/lifetracker/desktop-linux/tasktracker-client.sh --toggle`
+2. Name: `Toggle Life Tracker`
+3. Command: `/path/to/lifetracker/desktop-linux/lifetracker-client.sh --toggle`
 4. Key: (your choice of key combination)
 5. Click **Add**.
 

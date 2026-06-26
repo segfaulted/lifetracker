@@ -10,7 +10,7 @@ from app.database import engine, get_db
 # Create database tables automatically on startup
 SQLModel.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Task Tracker API")
+app = FastAPI(title="Life Tracker API")
 
 # Configure CORS
 app.add_middleware(
@@ -69,7 +69,7 @@ async def websocket_endpoint(websocket: WebSocket):
 # Root status
 @app.get("/api")
 def root():
-    return {"message": "Task Tracker API is running"}
+    return {"message": "Life Tracker API is running"}
 
 # Projects API
 @app.get("/api/projects", response_model=List[schemas.Project])

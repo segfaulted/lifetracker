@@ -3,14 +3,14 @@ from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import QTimer
 
 from app.window_tasks import MainWindow
-from app.api_client import TaskTrackerApiClient
+from app.api_client import LifeTrackerApiClient
 
 def run_integration_test():
     print("[Test] Initializing QApplication...")
     app = QApplication(sys.argv)
     
     print("[Test] Checking backend server connectivity...")
-    client = TaskTrackerApiClient("http://127.0.0.1:8000")
+    client = LifeTrackerApiClient("http://127.0.0.1:8000")
     if not client.check_connection():
         print("[FAIL] Backend server is not running on port 8000.")
         sys.exit(1)

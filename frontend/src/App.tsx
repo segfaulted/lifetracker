@@ -333,7 +333,7 @@ function App() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-slate-950 text-slate-100">
         <div className="w-12 h-12 rounded-full border-4 border-violet-500/20 border-t-violet-500 animate-spin mb-4"></div>
-        <p className="text-sm font-semibold tracking-wide text-zinc-400">Loading TaskTracker Workspace...</p>
+        <p className="text-sm font-semibold tracking-wide text-zinc-400">Loading Life Tracker Workspace...</p>
       </div>
     );
   }
@@ -347,7 +347,7 @@ function App() {
             <Clock className="w-5 h-5" />
           </div>
           <div>
-            <h1 className="text-base font-bold text-zinc-100 tracking-tight leading-none">TaskTracker</h1>
+            <h1 className="text-base font-bold text-zinc-100 tracking-tight leading-none">Life Tracker</h1>
             <span className="text-[10px] text-zinc-400 font-medium">Single-User Dashboard</span>
           </div>
         </div>
@@ -595,7 +595,7 @@ function App() {
 
       {/* Sleek Footer */}
       <footer className="border-t border-zinc-900 bg-zinc-950/40 py-4 px-6 text-center text-[10px] text-zinc-500">
-        TaskTracker SPA &copy; {new Date().getFullYear()} &bull; Built with FastAPI & React Tailwind v4
+        Life Tracker SPA &copy; {new Date().getFullYear()} &bull; Built with FastAPI & React Tailwind v4
       </footer>
     </div>
   );

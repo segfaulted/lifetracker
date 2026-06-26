@@ -17,7 +17,7 @@ def seed():
 
         # 1. Project A
         p1 = models.Project(
-            name="TaskTracker App Development",
+            name="LifeTracker App Development",
             description="Design and implement a single-page task and time tracking application using FastAPI and React."
         )
         db.add(p1)

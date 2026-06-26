@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtGui import QIcon, QPixmap, QPainter, QColor, QBrush, QMouseEvent
 from PyQt6.QtCore import Qt, QSize, QSettings, QPoint, QTimer, QThread, pyqtSignal
 
-from app.api_client import TaskTrackerApiClient as MedTrackerClient
+from app.api_client import LifeTrackerApiClient as MedTrackerClient
 from app.widgets import SwitchButton
 from app.styles import STYLESHEET
 

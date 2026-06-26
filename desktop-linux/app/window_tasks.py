@@ -12,7 +12,7 @@ from PyQt6.QtGui import QIcon, QPixmap, QPainter, QColor, QBrush, QMouseEvent, Q
 from PyQt6.QtCore import Qt, QSize, QSettings, QPoint, QTimer, QThread, pyqtSignal, QUrl
 from PyQt6.QtWebSockets import QWebSocket
 
-from app.api_client import TaskTrackerApiClient
+from app.api_client import LifeTrackerApiClient
 from app.widgets import SwitchButton
 from app.styles import STYLESHEET
 
@@ -38,7 +38,7 @@ class TitleBar(QWidget):
         self.logo_label.setStyleSheet("font-size: 14px;")
         
         # Title text
-        self.title_label = QLabel("TaskTracker Client")
+        self.title_label = QLabel("Life Tracker Client")
         self.title_label.setObjectName("TitleLabel")
         
         # Window buttons
@@ -85,7 +85,7 @@ class TitleBar(QWidget):
 class ApiWorker(QThread):
     finished = pyqtSignal(bool, str, object)
 
-    def __init__(self, action: str, client: TaskTrackerApiClient, *args):
+    def __init__(self, action: str, client: LifeTrackerApiClient, *args):
         super().__init__()
         self.action = action
         self.client = client
@@ -110,9 +110,9 @@ class MainWindow(QWidget):
         super().__init__()
         
         # Initialize Settings and Client
-        self.settings = QSettings("TaskTracker", "TrayClient")
+        self.settings = QSettings("LifeTracker", "TrayClient")
         server_url = self.settings.value("server_url", "http://127.0.0.1:8000")
-        self.client = TaskTrackerApiClient(server_url)
+        self.client = LifeTrackerApiClient(server_url)
         
         self.is_connected = False
         self.projects_list = []
@@ -193,7 +193,7 @@ class MainWindow(QWidget):
         settings_layout.setContentsMargins(12, 12, 12, 12)
         settings_layout.setSpacing(8)
         
-        url_label = QLabel("TASKTRACKER SERVER URL")
+        url_label = QLabel("LIFETRACKER SERVER URL")
         url_label.setObjectName("SettingsLabel")
         
         self.url_input = QLineEdit()

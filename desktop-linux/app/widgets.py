@@ -26,7 +26,7 @@ class SwitchButton(QAbstractButton):
         # Connect clicked signal to animate state transition
         self.toggled.connect(self._animate_toggle)
         
-        # Colors (Indigo/Violet accent for TaskTracker)
+        # Colors (Indigo/Violet accent for Life Tracker)
         self.color_track_unchecked = QColor("#1e1e24")
         self.color_track_checked = QColor("#6366f1")  # Indigo
         self.color_thumb = QColor("#ffffff")

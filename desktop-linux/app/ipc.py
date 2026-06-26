@@ -2,7 +2,7 @@ import sys
 from PyQt6.QtCore import QObject, pyqtSignal
 from PyQt6.QtNetwork import QLocalServer, QLocalSocket
 
-SOCKET_NAME = "tasktracker_tray_client_ipc"
+SOCKET_NAME = "lifetracker_tray_client_ipc"
 
 class IPCManager(QObject):
     toggle_requested = pyqtSignal(str)  # Emits "tasks" or "meds"

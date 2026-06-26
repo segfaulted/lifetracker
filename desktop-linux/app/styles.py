@@ -1,4 +1,4 @@
-# Sleek Dark Modern QSS stylesheet for TaskTracker Client
+# Sleek Dark Modern QSS stylesheet for Life Tracker Client
 
 STYLESHEET = """
 /* Main Window */

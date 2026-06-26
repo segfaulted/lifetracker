@@ -1,12 +1,12 @@
 import requests
 from typing import List, Optional
 
-class TaskTrackerApiClient:
+class LifeTrackerApiClient:
     def __init__(self, base_url="http://127.0.0.1:8000"):
         self.base_url = base_url.rstrip('/')
 
     def check_connection(self) -> bool:
-        """Checks if the TaskTracker server is reachable."""
+        """Checks if the LifeTracker server is reachable."""
         try:
             response = requests.get(f"{self.base_url}/api", timeout=2.0)
             return response.status_code == 200
